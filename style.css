@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7f7f7;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 90%;
+  height: 10vh;
+  margin: auto;
+}
+
+header .logo-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .logo-container .logo {
+  font-weight: bolder;
+  margin: 5px;
+  font-size: 20px;
+  color: #1e075f;
+}
+
+header .logo-container img {
+  width: 75px;
+}
+
+header nav {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+header nav .nav-links {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header nav .nav-links .nav-link {
+  color: #5f5f79;
+  font-size: 18px;
+}
+
+header .cart {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .cart img {
+  width: 35px;
+}
+
+.logo-container, .nav-links, .cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.presentation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 80vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.presentation .introduction {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.presentation .introduction .intro-text h1 {
+  font-size: 44px;
+  font-weight: 500;
+  background: -webkit-gradient(linear, left top, right top, from(#494964), to(#6f6f89));
+  background: linear-gradient(to right, #494964, #6f6f89);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.presentation .introduction .intro-text p {
+  margin-top: 5px;
+  font-size: 22px;
+  color: #585772;
+}
+
+.presentation .introduction .cta {
+  padding-top: 50px;
+}
+
+.presentation .introduction .cta .cta-select, .presentation .introduction .cta .cta-add {
+  border: 2px solid #1e075f;
+  background-color: transparent;
+  color: #1e075f;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.presentation .introduction .cta .cta-select:hover, .presentation .introduction .cta .cta-add:hover {
+  color: #f7f7f7;
+  background-color: #1e075f;
+}
+
+.presentation .introduction .cta .cta-add {
+  background-color: #1e075f;
+  color: #f7f7f7;
+  margin: 30px 0px 0px 30px;
+}
+
+.presentation .introduction .cta .cta-add:hover {
+  color: #1e075f;
+  background-color: #f7f7f7;
+}
+
+.cover {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cover img {
+  -webkit-animation: dropLaptop 1.5s ease;
+          animation: dropLaptop 1.5s ease;
+  height: 70vh;
+  width: 100%;
+  -webkit-filter: drop-shadow(0px 8px 6px black);
+          filter: drop-shadow(0px 8px 6px black);
+}
+
+.laptop-nav img {
+  width: 15%;
+  position: absolute;
+  bottom: 10%;
+  right: 17%;
+}
+
+.circle-xxl {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.7;
+  height: 90%;
+}
+
+.circle-xl {
+  position: absolute;
+  top: 25%;
+  right: 25%;
+  z-index: -1;
+  opacity: 0.5;
+  height: 70%;
+}
+
+.circle-l {
+  position: absolute;
+  top: initial;
+  right: initial;
+  z-index: -1;
+  opacity: 0.3;
+  height: 40%;
+  bottom: 0;
+  left: 30%;
+}
+
+@-webkit-keyframes dropLaptop {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes dropLaptop {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header .logo-container {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+  .cover img {
+    height: 50vh;
+  }
+  main {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  header {
+    height: 15vh;
+  }
+  header .logo-container {
+    -webkit-box-flex: 0.7;
+        -ms-flex: 0.7;
+            flex: 0.7;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .logo-container .logo {
+    font-size: 10px;
+  }
+  header .logo-container img {
+    width: 50px;
+  }
+  header nav .nav-links .nav-link {
+    font-size: 14px;
+  }
+  header .cart {
+    -webkit-box-flex: 0.5;
+        -ms-flex: 0.5;
+            flex: 0.5;
+  }
+  header .cart img {
+    width: 30px;
+  }
+  .presentation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+  }
+  .presentation .introduction {
+    height: 100vh;
+    margin: 40px 0px;
+  }
+  .presentation .introduction .intro-text h1 {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  .presentation .introduction .cta .cta-select, .presentation .introduction .cta .cta-add {
+    margin: 30px 0px 0px 20px;
+  }
+  .cover {
+    padding: 50px 0px;
+  }
+  .laptop-nav img {
+    bottom: 5%;
+    right: 50%;
+    width: 25%;
+    position: fixed;
+    -webkit-transform: translate(50%, 5%);
+            transform: translate(50%, 5%);
+  }
+  .circle-xl {
+    top: 50%;
+  }
+  .circle-l {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  header .logo-container .logo {
+    font-size: 60px;
+  }
+  header .logo-container img {
+    width: 200px;
+  }
+  header nav .nav-links .nav-link {
+    font-size: 45px;
+  }
+  header .cart img {
+    width: 100px;
+  }
+  .presentation .introduction .intro-text h1 {
+    font-size: 90px;
+  }
+  .presentation .introduction .intro-text p {
+    font-size: 50px;
+  }
+  .presentation .introduction .cta .cta-select, .presentation .introduction .cta .cta-add {
+    height: 100px;
+    width: 300px;
+    font-size: 35px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
